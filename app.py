@@ -3,7 +3,8 @@ from typing import List, Tuple
 from fastapi import FastAPI, HTTPException, Body
 from fastapi.responses import Response, JSONResponse
 from pydantic import BaseModel, Field, conint
-from deepgram import DeepgramClient, SpeakOptions
+from deepgram import DeepgramClient
+from deepgram.speak import SpeakOptions
 from pydub import AudioSegment
 
 DEEPGRAM_API_KEY = "7685102e54552e3305a689630ef8b311720507e4"
