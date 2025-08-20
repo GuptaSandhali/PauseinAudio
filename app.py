@@ -6,6 +6,8 @@ from pydantic import BaseModel, Field, conint
 from deepgram import DeepgramClient
 from deepgram.speak import SpeakOptions
 from pydub import AudioSegment
+from imageio_ffmpeg import get_ffmpeg_exe
+from pydub import AudioSegment
 
 DEEPGRAM_API_KEY = "7685102e54552e3305a689630ef8b311720507e4"
 if not DEEPGRAM_API_KEY:
